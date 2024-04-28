@@ -2,6 +2,20 @@
 # Required Cmake version
 cmake_minimum_required(VERSION 3.27)
 
+
+# automatically set the build platform
+set(_target_platform "x64" CACHE STRING "Target Platform: x86 or x64")
+if(_target_platform STREQUAL "x86")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -m32")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m32")
+elseif(_target_platform STREQUAL "x64")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -m64")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64")
+else()
+    message(FATAL_ERROR "unknown target platform ${_target_platform}")
+endif()
+
+
 # When in Windows system, need to convert the path to the cmake format
 if (WIN32) # set to be true if the system is windows
     function(convert_to_cmake_path_format PATH)
