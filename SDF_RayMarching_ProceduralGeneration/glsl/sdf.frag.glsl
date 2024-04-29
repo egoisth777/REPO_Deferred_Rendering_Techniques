@@ -16,13 +16,14 @@ Ray rayCast() {
 }
 
 #define MAX_ITERATIONS 128
+
 /**
 * @param ray The ray to march along
 * @return A MarchResult struct containing the distance to the closest object,
 * the number of iterations taken, and the BSDF at the hit point
 */
 //TODO: Implement raymarch function
-MarchResult raymarch(Ray ray) {
+MarchResult raymarch(Ray ray){
     float accum_dist = 0.;// initialize the accumulated distance to be 0
     float march_step = 0.001;// initialize the march step to be 0.001
     float min_dist = EPSILON;// Epsilon value to stop ray marching
@@ -32,7 +33,6 @@ MarchResult raymarch(Ray ray) {
 
     // Declare a march result and initialize it to 0
     MarchResult result = MarchResult(0., 0, BSDF(vec3(0.), vec3(0.), vec3(0.), 0.f, 0.f, 0.f));
-
     for (int i = 0; i < MAX_ITERATIONS; i++) { // define the loop to iterate over MAX_ITERATIONS
 
         // Query the scene SDF to gain the minimum distance to the surfaces defined by SDFs

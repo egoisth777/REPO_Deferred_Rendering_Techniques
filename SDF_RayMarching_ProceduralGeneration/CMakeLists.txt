@@ -2,6 +2,7 @@
 # Required Cmake version
 cmake_minimum_required(VERSION 3.27)
 add_compile_options(-Wall)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
 
 # automatically set the build platform
 set(_target_platform "x64" CACHE STRING "Target Platform: x86 or x64")
@@ -34,6 +35,7 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 
 # Find the required packages
 
+
 # Set CMake Prefix Path
 convert_to_cmake_path_format(QT6_DIR)
 set(CMAKE_PREFIX_PATH ${QT6_DIR})# Set the QT6 installation path
@@ -41,7 +43,6 @@ set(CMAKE_PREFIX_PATH ${QT6_DIR})# Set the QT6 installation path
 # Find the required packages
 find_package(OpenGL REQUIRED) # In QT6, OpenGL is not included in the QT6 package, so we need to find it separately
 find_package(Qt6 6.2.2 COMPONENTS Core Widgets Gui OpenGL OpenGLWidgets REQUIRED) #necessary components to create qt GUI/OpenGL application
-
 
 # if packages not found, print the error message if needed
 if(NOT Qt6_FOUND)

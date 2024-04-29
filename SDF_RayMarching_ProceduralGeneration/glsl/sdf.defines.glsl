@@ -4,7 +4,7 @@
 #define WAHOO     (1 << 1)
 #define FREEFORM1 (1 << 2)
 
-#define OBJECT_TYPE SPHERE
+#define OBJECT_TYPE FREEFORM1
 
 #define USE_SPHERE    ((OBJECT_TYPE & SPHERE) != 0)
 #define USE_WAHOO     ((OBJECT_TYPE & WAHOO) != 0)
@@ -213,6 +213,46 @@ float SDF_Wahoo(vec3 query) {
     return result;
 }
 
+/**
+* Return the normal of a cone
+* Credit: https://iquilezles.org/articles/distfunctions/
+* IQ's SDF_exact_cone function
+*/
+float SDF_exact_cone( vec3 p, vec2 c, float h ) {
+
+    // c is the sin/cos of the angle, h is height
+    // Alternatively pass q instead of (c,h),
+    // which is the point at the base in 2D
+    vec2 q = h*vec2(c.x/c.y,-1.0);
+
+    vec2 w = vec2( length(p.xz), p.y );
+    vec2 a = w - q*clamp( dot(w,q)/dot(q,q), 0.0, 1.0 );
+    vec2 b = w - q*vec2( clamp( w.x/q.x, 0.0, 1.0 ), 1.0 );
+    float k = sign( q.y );
+    float d = min(dot( a, a ),dot(b, b));
+    float s = max( k*(w.x*q.y-w.y*q.x),k*(w.y-q.y)  );
+    return sqrt(d)*sign(s);
+}
+
+/**
+* SDF of the head of the freeform object
+*t
+*/
+float SDF_Freeform_head(vec3 query){
+    // Define the left and right horns
+    // right horns
+    float result = SDF_exact_cone(rotateZ(rotateX(query - vec3(2.0, 0.0, 0.0), 15), 30), vec2(0.5, 0.7), 1.0);
+
+    return result;
+}
+
+float SDF_Freeform1(vec3 query) {
+    return SDF_Freeform_head(query);
+}
+
+/**
+* Return the BSDF of Wahoo
+*/
 BSDF BSDF_Wahoo(vec3 query) {
     // Head base
     BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
@@ -234,23 +274,34 @@ BSDF BSDF_Wahoo(vec3 query) {
     return result;
 }
 
-float sceneSDF(vec3 query){
 
+/**
+* Scene SDF
+*/
+float sceneSDF(vec3 query){
     if(USE_SPHERE){
         return SDF_Sphere(query, vec3(0.), 1.f);
     }
     if(USE_WAHOO){
         return SDF_Wahoo(query);
     }
-
-    //todo: implement freeform1
+    if(USE_FREEFORM1){
+        return SDF_Freeform1(query);
+    }
     return 0.f;
 }
 
 
 BSDF sceneBSDF(vec3 query) {
-
-    return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0),
-                0.5, 0.5, 1.);
-//    return BSDF_Wahoo(query);
+    if(USE_SPHERE){ // Use a simple default materials
+        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
+    }
+    if(USE_WAHOO){
+//        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
+         return BSDF_Wahoo(query);
+    }
+    if(USE_FREEFORM1){
+        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
+    }
+    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
 }
