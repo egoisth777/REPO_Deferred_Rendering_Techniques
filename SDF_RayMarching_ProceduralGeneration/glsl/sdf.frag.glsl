@@ -1,5 +1,7 @@
 
 #define FOVY 45 * PI / 180.f
+#define EPSILON 0.15
+
 Ray rayCast() {
     vec2 ndc = fs_UV;
     ndc = ndc * 2.f - vec2(1.f);
@@ -14,8 +16,42 @@ Ray rayCast() {
 }
 
 #define MAX_ITERATIONS 128
+/**
+* @param ray The ray to march along
+* @return A MarchResult struct containing the distance to the closest object,
+* the number of iterations taken, and the BSDF at the hit point
+*/
+//TODO: Implement raymarch function
 MarchResult raymarch(Ray ray) {
-    return MarchResult(-1, 0, BSDF(vec3(0.), vec3(0.), vec3(0.), 0., 0., 0.));
+    float accum_dist = 0.;// initialize the accumulated distance to be 0
+    float march_step = 0.001;// initialize the march step to be 0.001
+    float min_dist = EPSILON;// Epsilon value to stop ray marching
+    float max_dist = 100.;
+    int hit_something = 0;
+    vec3 curr_pos = ray.origin;// initialize the origin of the ray to be the current position
+
+    // Declare a march result and initialize it to 0
+    MarchResult result = MarchResult(0., 0, BSDF(vec3(0.), vec3(0.), vec3(0.), 0.f, 0.f, 0.f));
+
+    for (int i = 0; i < MAX_ITERATIONS; i++) { // define the loop to iterate over MAX_ITERATIONS
+
+        // Query the scene SDF to gain the minimum distance to the surfaces defined by SDFs
+        march_step = sceneSDF(curr_pos);
+
+        if (march_step > max_dist) { // too far away from the surface, simply cut it
+            break;
+        }
+        if (abs(march_step) < min_dist) { // already clase enough to the surface
+            hit_something = 1;
+            BSDF bsdf = sceneBSDF(curr_pos);
+            return MarchResult(accum_dist, i, bsdf);
+        }
+        accum_dist += march_step;// update the accumulated distance
+        // update the curr_pos according to the march_step given by the sdf
+        // by marching the minimum distance along the ray direction
+        curr_pos = ray.origin + march_step * ray.direction;
+    }
+    return result;
 }
 
 void main()
@@ -31,7 +67,12 @@ void main()
     color = color / (color + vec3(1.0));
     // Gamma correction
     color = pow(color, vec3(1.0/2.2));
-
+#if 0
+    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+#endif
+#if 1
     out_Col = vec4(color, result.hitSomething > 0 ? 1. : 0.);
+#endif
+
 }
 

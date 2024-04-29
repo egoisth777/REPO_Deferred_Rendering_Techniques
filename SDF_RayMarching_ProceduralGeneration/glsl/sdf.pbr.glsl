@@ -100,7 +100,7 @@ vec3 metallic_plastic_LTE(BSDF bsdf, vec3 wo) {
     // Compute the Specular Term
     vec3 specular = glossy * (ks * brdfLookUpResult.x + brdfLookUpResult.y);
     vec3 ambient = (kd * diffuse + specular) * ambientOcclusion;
+    // Direct return thes Material Color without reinhard and gamma (will do later)
     vec3 final_Col = ambient + vec3(0.f);
-
     return final_Col;
 }

@@ -11,7 +11,6 @@ Camera::Camera():
     up = glm::vec3(0,1,0);
     right = glm::vec3(1,0,0);
 }
-
 Camera::Camera(unsigned int w, unsigned int h):
     Camera(w, h, glm::vec3(0,0,10), glm::vec3(0,0,0), glm::vec3(0,1,0))
 {}
