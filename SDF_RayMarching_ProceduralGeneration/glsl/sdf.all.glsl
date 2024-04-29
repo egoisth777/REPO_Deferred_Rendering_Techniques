@@ -1,5 +1,15 @@
 #version 330 core
 
+#define SPHERE    (1 << 0)
+#define WAHOO     (1 << 1)
+#define FREEFORM1 (1 << 2)
+
+#define OBJECT_TYPE SPHERE
+
+#define USE_SPHERE    ((OBJECT_TYPE & SPHERE) != 0)
+#define USE_WAHOO     ((OBJECT_TYPE & WAHOO) != 0)
+#define USE_FREEFORM1 ((OBJECT_TYPE & FREEFORM1) != 0)
+
 uniform float u_Time;
 
 uniform vec3 u_CamPos;
@@ -224,10 +234,17 @@ BSDF BSDF_Wahoo(vec3 query) {
     return result;
 }
 
-float sceneSDF(vec3 query) {
+float sceneSDF(vec3 query){
 
-    return SDF_Sphere(query, vec3(0.), 1.f);
-//    return SDF_Wahoo(query);
+    if(USE_SPHERE){
+        return SDF_Sphere(query, vec3(0.), 1.f);
+    }
+    if(USE_WAHOO){
+        return SDF_Wahoo(query);
+    }
+
+    //todo: implement freeform1
+    return 0.f;
 }
 
 
@@ -287,7 +304,7 @@ vec3 fresnelSchlick(float cosTheta, vec3 F0) {
 
 // Same as above, but accounts for surface roughness
 vec3 fresnelSchlickRoughness(float cosTheta, vec3 F0, float roughness) {
-    return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
+return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
 }
 
 void coordinateSystem(in vec3 nor, out vec3 tan, out vec3 bit) {
@@ -346,6 +363,8 @@ vec3 metallic_plastic_LTE(BSDF bsdf, vec3 wo) {
 
 
 #define FOVY 45 * PI / 180.f
+#define EPSILON 0.5
+
 Ray rayCast() {
     vec2 ndc = fs_UV;
     ndc = ndc * 2.f - vec2(1.f);
@@ -369,7 +388,7 @@ Ray rayCast() {
 MarchResult raymarch(Ray ray) {
     float accum_dist = 0.;// initialize the accumulated distance to be 0
     float march_step = 0.001;// initialize the march step to be 0.001
-    float min_dist = 0.15;// Epsilon value to stop ray marching
+    float min_dist = EPSILON;// Epsilon value to stop ray marching
     float max_dist = 100.;
     int hit_something = 0;
     vec3 curr_pos = ray.origin;// initialize the origin of the ray to be the current position
@@ -411,13 +430,14 @@ void main()
     color = color / (color + vec3(1.0));
     // Gamma correction
     color = pow(color, vec3(1.0/2.2));
-#if 0
-    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+
+#if 1
+    out_Col = vec4(vec3(result.bsdf.nor), result.hitSomething > 0 ? 1. : 0.);
 #endif
 #if 1
+    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+#endif
+#if 0
     out_Col = vec4(color, result.hitSomething > 0 ? 1. : 0.);
 #endif
-
-}
-
- 
+} 

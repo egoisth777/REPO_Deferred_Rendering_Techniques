@@ -1,5 +1,15 @@
 #version 330 core
 
+#define SPHERE    (1 << 0)
+#define WAHOO     (1 << 1)
+#define FREEFORM1 (1 << 2)
+
+#define OBJECT_TYPE SPHERE
+
+#define USE_SPHERE    ((OBJECT_TYPE & SPHERE) != 0)
+#define USE_WAHOO     ((OBJECT_TYPE & WAHOO) != 0)
+#define USE_FREEFORM1 ((OBJECT_TYPE & FREEFORM1) != 0)
+
 uniform float u_Time;
 
 uniform vec3 u_CamPos;
@@ -224,10 +234,17 @@ BSDF BSDF_Wahoo(vec3 query) {
     return result;
 }
 
-float sceneSDF(vec3 query) {
+float sceneSDF(vec3 query){
 
-    return SDF_Sphere(query, vec3(0.), 1.f);
-//    return SDF_Wahoo(query);
+    if(USE_SPHERE){
+        return SDF_Sphere(query, vec3(0.), 1.f);
+    }
+    if(USE_WAHOO){
+        return SDF_Wahoo(query);
+    }
+
+    //todo: implement freeform1
+    return 0.f;
 }
 
 

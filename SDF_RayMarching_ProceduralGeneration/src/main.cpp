@@ -3,7 +3,8 @@
 #include <QApplication>
 #include <QSurfaceFormat>
 #include <QDebug>
-
+#include <filesystem>
+#include <iostream>
 void debugFormatVersion()
 {
     QSurfaceFormat form = QSurfaceFormat::defaultFormat();
@@ -21,6 +22,8 @@ void debugFormatVersion()
 
 int main(int argc, char *argv[])
 {
+    std::cout << std::filesystem::current_path() << std::endl;
+
     QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication a(argc, argv);
 

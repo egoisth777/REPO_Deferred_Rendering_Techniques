@@ -1,6 +1,6 @@
 
 #define FOVY 45 * PI / 180.f
-#define EPSILON 0.15
+#define EPSILON 0.5
 
 Ray rayCast() {
     vec2 ndc = fs_UV;
@@ -67,12 +67,14 @@ void main()
     color = color / (color + vec3(1.0));
     // Gamma correction
     color = pow(color, vec3(1.0/2.2));
-#if 0
-    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+
+#if 1
+    out_Col = vec4(vec3(result.bsdf.nor), result.hitSomething > 0 ? 1. : 0.);
 #endif
 #if 1
+    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+#endif
+#if 0
     out_Col = vec4(color, result.hitSomething > 0 ? 1. : 0.);
 #endif
-
 }
-

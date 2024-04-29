@@ -1,7 +1,7 @@
 # Setting up the project
 # Required Cmake version
 cmake_minimum_required(VERSION 3.27)
-
+add_compile_options(-Wall)
 
 # automatically set the build platform
 set(_target_platform "x64" CACHE STRING "Target Platform: x86 or x64")
