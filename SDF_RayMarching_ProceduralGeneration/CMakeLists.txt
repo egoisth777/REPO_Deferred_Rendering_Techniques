@@ -34,6 +34,11 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 
 # Find the required packages
 
+# Set CMake Prefix Path
+convert_to_cmake_path_format(QT6_DIR)
+set(CMAKE_PREFIX_PATH ${QT6_DIR})# Set the QT6 installation path
+
+# Find the required packages
 find_package(OpenGL REQUIRED) # In QT6, OpenGL is not included in the QT6 package, so we need to find it separately
 find_package(Qt6 6.2.2 COMPONENTS Core Widgets Gui OpenGL OpenGLWidgets REQUIRED) #necessary components to create qt GUI/OpenGL application
 
@@ -43,10 +48,6 @@ if(NOT Qt6_FOUND)
     message(FATAL_ERROR "QT6 not found")
 endif()
 
-convert_to_cmake_path_format(QT6_DIR)
-
-# Prepend the QT6 installation path (This happens when the cmake cannot find the qt installation path)
-set(CMAKE_PREFIX_PATH ${QT6_DIR})# Set the QT6 installation path
 
 # Set the C++ Stanard C++17
 set(CMAKE_CXX_STANDARD 20)

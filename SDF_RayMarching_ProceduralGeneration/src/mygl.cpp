@@ -79,7 +79,7 @@ void MyGL::initializeGL()
 
     m_geomSquare.create();
     QString path = getCurrentPath();
-    path.append("/assignment_package/objs/");
+    path.append("/objs/");
     m_geomMesh.LoadOBJ("sphere.obj", path);
     m_geomMesh.create();
     m_geomCube.create();
@@ -104,7 +104,7 @@ void MyGL::initializeGL()
     m_environmentCubemapFB.create(true);
     m_diffuseIrradianceFB.create();
     m_glossyIrradianceFB.create(true);
-    m_brdfLookupTexture.create(":/textures/brdfLUT.png", false);
+    m_brdfLookupTexture.create("../textures/brdfLUT.png", false);
 
 
     // We have to have a VAO bound in OpenGL 3.2 Core. But if we're not
@@ -425,7 +425,7 @@ void MyGL::slot_setDisplacement(double d) {
 
 void MyGL::slot_loadEnvMap() {
     QString path = getCurrentPath();
-    path.append("/assignment_package/environment_maps/");
+    path.append("/environment_maps/");
     QString filepath = QFileDialog::getOpenFileName(
                         0, QString("Load Environment Map"),
                         path, tr("*.hdr"));
@@ -445,7 +445,7 @@ void MyGL::slot_loadEnvMap() {
 
 void MyGL::slot_loadScene() {
     QString path = getCurrentPath();
-    path.append("/assignment_package/models/");
+    path.append("/models/");
     QString filepath = QFileDialog::getOpenFileName(
                         0, QString("Load Environment Map"),
                         path, tr("*.json"));
@@ -506,7 +506,7 @@ void MyGL::slot_loadScene() {
 void MyGL::slot_revertToSphere() {
     m_geomMesh.destroy();
     QString path = getCurrentPath();
-    path.append("/assignment_package/objs/");
+    path.append("/objs/");
     m_geomMesh.LoadOBJ("sphere.obj", path);
     m_geomMesh.create();
 
@@ -533,10 +533,11 @@ void MyGL::slot_revertToSphere() {
 
 void MyGL::slot_loadOBJ() {
     QString path = getCurrentPath();
-    path.append("/assignment_package/models/");
+    path.append("/objs/");
+    qDebug() << path;
     QString filepath = QFileDialog::getOpenFileName(
-                        0, QString("Load OBJ File"),
-                        path, tr("*.obj"));
+                        this, QString("Load OBJ File"),
+                        path, tr("(*.obj)"));
     m_geomMesh.destroy();
     m_geomMesh.LoadOBJ(filepath, "");
     m_geomMesh.create();
@@ -584,11 +585,11 @@ void MyGL::tick() {
 
 QString MyGL::writeFullShaderFile() const {
     std::vector<const char*> fragfile_sections = {
-        ":/glsl/sdf.pbr.glsl",
-        ":/glsl/sdf.frag.glsl"
+        "../glsl/sdf.pbr.glsl",
+        "../glsl/sdf.frag.glsl"
     };
 
-    QString qFragSource = qTextFileRead(":/glsl/sdf.defines.glsl");
+    QString qFragSource = qTextFileRead("../glsl/sdf.defines.glsl");
     qFragSource.chop(1); // Must remove the \0 at the end of the previous section
 
     int lineCount = 0;
@@ -603,7 +604,7 @@ QString MyGL::writeFullShaderFile() const {
     // Write the entire frag source to a single file so that
     // we the programmer can read & debug our code in one file
     QString path = getCurrentPath();
-    QFile entireShader(path + "/assignment_package/glsl/sdf.all.glsl");
+    QFile entireShader(path + "/glsl/sdf.all.glsl");
     if (entireShader.open(QIODevice::ReadWrite)) {
         entireShader.resize(0); // Clear out the old file contents
         QTextStream stream(&entireShader);

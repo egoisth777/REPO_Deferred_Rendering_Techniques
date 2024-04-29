@@ -15,7 +15,8 @@ Triangle::Triangle(glm::vec3 p1, glm::vec3 p2, glm::vec3 p3)
 
 void Mesh::LoadOBJ(const QString &filename, const QString &local_path)
 {
-    QString filepath = local_path; filepath.append(filename);
+    QString filepath = local_path;
+    filepath.append(filename);
     std::vector<tinyobj::shape_t> shapes; std::vector<tinyobj::material_t> materials;
     std::string errors = tinyobj::LoadObj(shapes, materials, filepath.toStdString().c_str());
     std::cout << errors << std::endl;
