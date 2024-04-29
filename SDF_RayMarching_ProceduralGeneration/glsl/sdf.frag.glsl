@@ -1,6 +1,6 @@
 
 #define FOVY 45 * PI / 180.f
-#define EPSILON 0.5
+#define EPSILON 0.01
 
 Ray rayCast() {
     vec2 ndc = fs_UV;
@@ -49,7 +49,7 @@ MarchResult raymarch(Ray ray) {
         accum_dist += march_step;// update the accumulated distance
         // update the curr_pos according to the march_step given by the sdf
         // by marching the minimum distance along the ray direction
-        curr_pos = ray.origin + march_step * ray.direction;
+        curr_pos = ray.origin + accum_dist * ray.direction;
     }
     return result;
 }
@@ -68,13 +68,13 @@ void main()
     // Gamma correction
     color = pow(color, vec3(1.0/2.2));
 
-#if 1
-    out_Col = vec4(vec3(result.bsdf.nor), result.hitSomething > 0 ? 1. : 0.);
-#endif
-#if 1
-    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+#if 0// print normal for debugging
+    out_Col = vec4(vec3(result.bsdf.nor * 0.5 + 0.5), result.hitSomething > 0 ? 1. : 0.);
 #endif
 #if 0
+    out_Col = vec4(vec3(result.hitSomething), result.hitSomething > 0 ? 1. : 0.);
+#endif
+#if 1
     out_Col = vec4(color, result.hitSomething > 0 ? 1. : 0.);
 #endif
 }
