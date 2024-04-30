@@ -26,17 +26,17 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
-			"E:/dev/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
-			"E:/dev/qt/qt622/6.2.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"E:/dev/IDEs/Jetbrains/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"E:/dev/libs/qt/6.2.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -271,37 +271,37 @@
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/include/QtWidgets"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/include/QtWidgets"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/include"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/include/QtCore"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/include/QtCore"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/mkspecs/win32-g++"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/mkspecs/win32-g++"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/include/QtGui"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/include/QtGui"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/include/QtOpenGLWidgets"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/include/QtOpenGLWidgets"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/dev/qt/qt622/6.2.2/mingw_64/include/QtOpenGL"
+					"path" : "E:/dev/libs/qt/6.2.2/mingw_64/include/QtOpenGL"
 				}
 			],
 			"language" : "CXX",
@@ -361,7 +361,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "E:\\dev\\qt\\qt622\\6.2.2\\mingw_64\\lib\\libQt6OpenGLWidgets.a",
+				"fragment" : "E:\\dev\\libs\\qt\\6.2.2\\mingw_64\\lib\\libQt6OpenGLWidgets.a",
 				"role" : "libraries"
 			},
 			{
@@ -376,17 +376,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "E:\\dev\\qt\\qt622\\6.2.2\\mingw_64\\lib\\libQt6Widgets.a",
+				"fragment" : "E:\\dev\\libs\\qt\\6.2.2\\mingw_64\\lib\\libQt6Widgets.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 9,
-				"fragment" : "E:\\dev\\qt\\qt622\\6.2.2\\mingw_64\\lib\\libQt6OpenGL.a",
+				"fragment" : "E:\\dev\\libs\\qt\\6.2.2\\mingw_64\\lib\\libQt6OpenGL.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "E:\\dev\\qt\\qt622\\6.2.2\\mingw_64\\lib\\libQt6Gui.a",
+				"fragment" : "E:\\dev\\libs\\qt\\6.2.2\\mingw_64\\lib\\libQt6Gui.a",
 				"role" : "libraries"
 			},
 			{
@@ -406,7 +406,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "E:\\dev\\qt\\qt622\\6.2.2\\mingw_64\\lib\\libQt6Core.a",
+				"fragment" : "E:\\dev\\libs\\qt\\6.2.2\\mingw_64\\lib\\libQt6Core.a",
 				"role" : "libraries"
 			},
 			{

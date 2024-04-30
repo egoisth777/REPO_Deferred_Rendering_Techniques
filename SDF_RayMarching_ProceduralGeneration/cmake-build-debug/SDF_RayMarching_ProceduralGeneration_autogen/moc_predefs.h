@@ -199,7 +199,6 @@
 #define __FLT_MIN_EXP__ (-125)
 #define __x86_64 1
 #define __cpp_lambdas 200907L
-#define __FLT16_HAS_DENORM__ 1
 #define __INT_FAST64_TYPE__ long long int
 #define __BFLT16_MAX__ 3.38953138925153547590470800371487867e+38BF16
 #define __FLT64_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F64
@@ -228,7 +227,7 @@
 #define __DEC_EVAL_METHOD__ 2
 #define __FLT_MANT_DIG__ 24
 #define __LDBL_DECIMAL_DIG__ 21
-#define __VERSION__ "13.2.0"
+#define __VERSION__ "13.1.0"
 #define __UINT64_C(c) c ## ULL
 #define __cpp_unicode_characters 201411L
 #define _WIN32 1
@@ -420,6 +419,7 @@
 #define __GNUC_STDC_INLINE__ 1
 #define __FLT64_HAS_DENORM__ 1
 #define __FLT32_EPSILON__ 1.19209289550781250000000000000000000e-7F32
+#define __FLT16_HAS_DENORM__ 1
 #define __DBL_DECIMAL_DIG__ 17
 #define __STDC_UTF_32__ 1
 #define __INT_FAST8_WIDTH__ 8
@@ -463,7 +463,7 @@
 #define __GLIBCXX_BITSIZE_INT_N_0 128
 #define __FLT32X_HAS_QUIET_NAN__ 1
 #define __ATOMIC_CONSUME 1
-#define __GNUC_MINOR__ 2
+#define __GNUC_MINOR__ 1
 #define __GLIBCXX_TYPE_INT_N_0 __int128
 #define __UINTMAX_MAX__ 0xffffffffffffffffULL
 #define __FLT32X_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F32x

@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = E:\dev\msys2\mingw64\bin\cmake.exe
+CMAKE_COMMAND = E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = E:\dev\msys2\mingw64\bin\cmake.exe -E rm -f
+RM = E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,12 +67,12 @@ include CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/progress.mak
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen: SDF_RayMarching_ProceduralGeneration_autogen/timestamp
 
-SDF_RayMarching_ProceduralGeneration_autogen/timestamp: E:/dev/qt/qt622/6.2.2/mingw_64/./bin/moc.exe
-SDF_RayMarching_ProceduralGeneration_autogen/timestamp: E:/dev/qt/qt622/6.2.2/mingw_64/./bin/uic.exe
+SDF_RayMarching_ProceduralGeneration_autogen/timestamp: E:/dev/libs/qt/6.2.2/mingw_64/./bin/moc.exe
+SDF_RayMarching_ProceduralGeneration_autogen/timestamp: E:/dev/libs/qt/6.2.2/mingw_64/./bin/uic.exe
 SDF_RayMarching_ProceduralGeneration_autogen/timestamp: CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SDF_RayMarching_ProceduralGeneration"
-	E:\dev\msys2\mingw64\bin\cmake.exe -E cmake_autogen E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/AutogenInfo.json Debug
-	E:\dev\msys2\mingw64\bin\cmake.exe -E touch E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/timestamp
+	E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E cmake_autogen E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/AutogenInfo.json Debug
+	E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/timestamp
 
 SDF_RayMarching_ProceduralGeneration_autogen: CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen
 SDF_RayMarching_ProceduralGeneration_autogen: SDF_RayMarching_ProceduralGeneration_autogen/timestamp

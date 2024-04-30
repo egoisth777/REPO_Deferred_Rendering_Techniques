@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = E:\dev\msys2\mingw64\bin\cmake.exe
+CMAKE_COMMAND = E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = E:\dev\msys2\mingw64\bin\cmake.exe -E rm -f
+RM = E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -65,12 +65,12 @@ include CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps.d
 # Include the progress variables for this target.
 include CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/qt/qt622/6.2.2/mingw_64/./bin/moc.exe
-CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6Core.a
-CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/qt/qt622/6.2.2/mingw_64/./bin/uic.exe
-CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6Gui.a
-CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6Widgets.a
-CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6OpenGLWidgets.a
+CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6Core.a
+CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/libs/qt/6.2.2/mingw_64/./bin/moc.exe
+CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6Widgets.a
+CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/libs/qt/6.2.2/mingw_64/./bin/uic.exe
+CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6Gui.a
+CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6OpenGLWidgets.a
 
 SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps
 SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps: CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps.dir/build.make

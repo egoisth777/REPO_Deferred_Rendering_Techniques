@@ -236,8 +236,8 @@ float SDF_exact_cone( vec3 p, vec2 c, float h ) {
 
 /**
 * SDF of the head of the freeform object
-*
-*/
+*tstatus
+/
 float SDF_Freeform_head(vec3 query){
     // Define the left and right horns
     // right horns

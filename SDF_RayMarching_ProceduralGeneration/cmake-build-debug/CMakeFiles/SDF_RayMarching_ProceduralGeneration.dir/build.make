@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = E:\dev\msys2\mingw64\bin\cmake.exe
+CMAKE_COMMAND = E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = E:\dev\msys2\mingw64\bin\cmake.exe -E rm -f
+RM = E:\dev\IDEs\Jetbrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,255 +73,255 @@ CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGe
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj: SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\SDF_RayMarching_ProceduralGeneration_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/camera.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\camera.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\camera.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\camera.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\camera.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\camera.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\camera.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\camera.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/cameracontrols.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrols.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrols.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrols.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrols.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrols.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrols.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrols.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/cameracontrolshelp.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrolshelp.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrolshelp.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrolshelp.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrolshelp.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrolshelp.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\cameracontrolshelp.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\cameracontrolshelp.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/drawable.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\drawable.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\drawable.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\drawable.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\drawable.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\drawable.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\drawable.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\drawable.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/framebuffer.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\framebuffer.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\framebuffer.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\framebuffer.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\framebuffer.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\framebuffer.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\framebuffer.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\framebuffer.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/main.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\main.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\main.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\main.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\main.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\main.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\main.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\main.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/mainwindow.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mainwindow.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mainwindow.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mainwindow.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mainwindow.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mainwindow.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mainwindow.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mainwindow.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/mygl.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mygl.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mygl.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mygl.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mygl.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mygl.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\mygl.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\mygl.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/openglcontext.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\openglcontext.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\openglcontext.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\openglcontext.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\openglcontext.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\openglcontext.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\openglcontext.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\openglcontext.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/scene/cube.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\cube.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\cube.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\cube.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\cube.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\cube.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\cube.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\cube.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/scene/mesh.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\mesh.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\mesh.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\mesh.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\mesh.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\mesh.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\mesh.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\mesh.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/scene/squareplane.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\squareplane.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\squareplane.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\squareplane.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\squareplane.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\squareplane.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\scene\squareplane.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\scene\squareplane.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/shaderprogram.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\shaderprogram.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\shaderprogram.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\shaderprogram.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\shaderprogram.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\shaderprogram.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\shaderprogram.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\shaderprogram.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/texture.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\texture.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\texture.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\texture.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\texture.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\texture.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\texture.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\texture.cpp.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/tinyobj/tiny_obj_loader.cc
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\tinyobj\tiny_obj_loader.cc
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\tinyobj\tiny_obj_loader.cc
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\tinyobj\tiny_obj_loader.cc > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\tinyobj\tiny_obj_loader.cc > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\tinyobj\tiny_obj_loader.cc -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\tinyobj\tiny_obj_loader.cc -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\tinyobj\tiny_obj_loader.cc.s
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj: E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/src/utils.cpp
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\utils.cpp
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj -MF CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.obj.d -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.obj -c E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\utils.cpp
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.i"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\utils.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.i
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\utils.cpp > CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.i
 
 CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.s"
-	E:\dev\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\utils.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.s
+	E:\dev\IDEs\Jetbrains\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\src\utils.cpp -o CMakeFiles\SDF_RayMarching_ProceduralGeneration.dir\src\utils.cpp.s
 
 # Object files for target SDF_RayMarching_ProceduralGeneration
 SDF_RayMarching_ProceduralGeneration_OBJECTS = \
@@ -364,11 +364,11 @@ SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralG
 SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj
 SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj
 SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/build.make
-SDF_RayMarching_ProceduralGeneration.exe: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6OpenGLWidgets.a
-SDF_RayMarching_ProceduralGeneration.exe: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6Widgets.a
-SDF_RayMarching_ProceduralGeneration.exe: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6OpenGL.a
-SDF_RayMarching_ProceduralGeneration.exe: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6Gui.a
-SDF_RayMarching_ProceduralGeneration.exe: E:/dev/qt/qt622/6.2.2/mingw_64/lib/libQt6Core.a
+SDF_RayMarching_ProceduralGeneration.exe: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6OpenGLWidgets.a
+SDF_RayMarching_ProceduralGeneration.exe: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6Widgets.a
+SDF_RayMarching_ProceduralGeneration.exe: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6OpenGL.a
+SDF_RayMarching_ProceduralGeneration.exe: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6Gui.a
+SDF_RayMarching_ProceduralGeneration.exe: E:/dev/libs/qt/6.2.2/mingw_64/lib/libQt6Core.a
 SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/linkLibs.rsp
 SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/objects1.rsp
 SDF_RayMarching_ProceduralGeneration.exe: CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/link.txt
