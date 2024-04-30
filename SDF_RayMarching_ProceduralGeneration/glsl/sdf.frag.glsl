@@ -1,6 +1,6 @@
 
 #define FOVY 45 * PI / 180.f
-#define EPSILON 0.01
+#define EPSILON 0.001
 
 Ray rayCast() {
     vec2 ndc = fs_UV;
@@ -59,10 +59,15 @@ void main()
     Ray ray = rayCast();
     MarchResult result = raymarch(ray);
     BSDF bsdf = result.bsdf;
+
+    if(USE_SPHERE){
+        bsdf.albedo = u_Albedo;
+        bsdf.metallic = u_Metallic;
+        bsdf.roughness = u_Roughness;
+        bsdf.ao = u_AmbientOcclusion;
+    }
     vec3 pos = ray.origin + result.t * ray.direction;
-
     vec3 color = metallic_plastic_LTE(bsdf, -ray.direction);
-
     // Reinhard operator to reduce HDR values from magnitude of 100s back to [0, 1]
     color = color / (color + vec3(1.0));
     // Gamma correction

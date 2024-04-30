@@ -4,7 +4,7 @@
 #define WAHOO     (1 << 1)
 #define FREEFORM1 (1 << 2)
 
-#define OBJECT_TYPE FREEFORM1
+#define OBJECT_TYPE SPHERE
 
 #define USE_SPHERE    ((OBJECT_TYPE & SPHERE) != 0)
 #define USE_WAHOO     ((OBJECT_TYPE & WAHOO) != 0)
@@ -234,7 +234,10 @@ float SDF_exact_cone( vec3 p, vec2 c, float h ) {
     return sqrt(d)*sign(s);
 }
 
-
+/**
+* SDF of the horns of the freeform object
+* @return float the sdf value
+*/
 float SDF_Freeform_horns(vec3 query){
     // Define the left and right horns
     // right horns
@@ -359,7 +362,7 @@ float sceneSDF(vec3 query){
 
 BSDF sceneBSDF(vec3 query) {
     if(USE_SPHERE){ // Use a simple default materials
-        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
+        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
     }
     if(USE_WAHOO){
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
@@ -371,6 +374,7 @@ BSDF sceneBSDF(vec3 query) {
     }
     return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
 }
+
 #define GAMMA 2.2
 #define INV_GAMMA (1.0 / GAMMA)
 const float MAX_REFLECTION_LOD = 4.0;
@@ -480,7 +484,7 @@ vec3 metallic_plastic_LTE(BSDF bsdf, vec3 wo) {
 
 
 #define FOVY 45 * PI / 180.f
-#define EPSILON 0.01
+#define EPSILON 0.001
 
 Ray rayCast() {
     vec2 ndc = fs_UV;
@@ -539,10 +543,15 @@ void main()
     Ray ray = rayCast();
     MarchResult result = raymarch(ray);
     BSDF bsdf = result.bsdf;
+
+    if(USE_SPHERE){
+        bsdf.albedo = u_Albedo;
+        bsdf.metallic = u_Metallic;
+        bsdf.roughness = u_Roughness;
+        bsdf.ao = u_AmbientOcclusion;
+    }
     vec3 pos = ray.origin + result.t * ray.direction;
-
     vec3 color = metallic_plastic_LTE(bsdf, -ray.direction);
-
     // Reinhard operator to reduce HDR values from magnitude of 100s back to [0, 1]
     color = color / (color + vec3(1.0));
     // Gamma correction

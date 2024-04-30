@@ -31,7 +31,7 @@ MyGL::MyGL(QWidget *parent)
       m_progCubemapDiffuseConvolution(this),
       m_progCubemapGlossyConvolution(this),
       m_progEnvMap(this),
-      m_glCamera(), m_mousePosPrev(), m_albedo(0.5f, 0.f, 0.f),
+      m_glCamera(), m_mousePosPrev(), m_albedo(1.0f, 1.0f, 1.0f), // intialize to white
       m_cubemapsNotGenerated(true)
 {
     setFocusPolicy(Qt::StrongFocus);
@@ -385,8 +385,8 @@ void MyGL::setupShaderHandles() {
 void MyGL::initPBRunifs() {
     m_progPBR.setUnifVec3("u_Albedo", m_albedo);
     m_progPBR.setUnifFloat("u_AmbientOcclusion", 1.f);
-    m_progPBR.setUnifFloat("u_Metallic", 0.5f);
-    m_progPBR.setUnifFloat("u_Roughness", 0.5f);
+    m_progPBR.setUnifFloat("u_Metallic", 0.0f);
+    m_progPBR.setUnifFloat("u_Roughness", 0.2f);
     m_progPBR.setUnifFloat("u_DisplacementMagnitude", 0.2f);
 }
 

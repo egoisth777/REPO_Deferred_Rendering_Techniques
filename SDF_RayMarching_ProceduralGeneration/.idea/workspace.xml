@@ -24,6 +24,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.all.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.all.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.defines.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.defines.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsl/sdf.frag.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.frag.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mygl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/mygl.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="glsl" pattern="file:*.glsl||file[SDF_RayMarching_ProceduralGeneration]:*" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714494655711</updated>
-      <workItem from="1714494657513" duration="6634000" />
+      <workItem from="1714494657513" duration="11398000" />
     </task>
     <servers />
   </component>
@@ -89,5 +94,16 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
