@@ -7,8 +7,8 @@
         <entry key="Debug">
           <value>
             <PerProfileState>
-              <option name="myQmlPath" value="$PROJECT_DIR$/../../../../dev/qt/qt622/6.2.2/mingw_64/./qml" />
-              <option name="myQtBinPath" value="$PROJECT_DIR$/../../../../dev/qt/qt622/6.2.2/mingw_64/bin" />
+              <option name="myQmlPath" value="$PROJECT_DIR$/../../../../dev/libs/qt/6.2.2/mingw_64/./qml" />
+              <option name="myQtBinPath" value="$PROJECT_DIR$/../../../../dev/libs/qt/6.2.2/mingw_64/bin" />
             </PerProfileState>
           </value>
         </entry>

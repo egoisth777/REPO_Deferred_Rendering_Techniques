@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader">{
-  &quot;useNewFormat&quot;: true
-}</component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -14,97 +14,18 @@
       <config projectName="SDF_RayMarching_ProceduralGeneration" targetName="SDF_RayMarching_ProceduralGeneration" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G &quot;MinGW Makefiles&quot;" />
-      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" GENERATION_OPTIONS="-G &quot;MinGW Makefiles&quot;" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81856938-25cc-4da5-933d-e9456ff5c83f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SDF_RayMarching_ProceduralGeneration.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-9d64c8a8d1841084dc77.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-416a0e4c6c3c04b0304c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3331bbdc9ce445e5a0d0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-29T18-51-11-0396.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-SDF_RayMarching_ProceduralGeneration-Debug-0e2b3c0893ae0d27538e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-89aaa3848d58c52fe902.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/includes_CXX.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/linkLibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/linkLibs.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/camera.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrols.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/cameracontrolshelp.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/drawable.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/framebuffer.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/main.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mainwindow.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/mygl.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/openglcontext.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/cube.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/mesh.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/scene/squareplane.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/shaderprogram.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/texture.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/tinyobj/tiny_obj_loader.cc.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration.dir/src/utils.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/AutogenInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/AutogenUsed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/AutogenUsed.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/ParseCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SDF_RayMarching_ProceduralGeneration_autogen_timestamp_deps.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_cameracontrolshelp.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_cameracontrolshelp.cpp.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_mainwindow.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_mainwindow.cpp.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_mygl.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_mygl.cpp.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_openglcontext.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/UVLADIE3JM/moc_openglcontext.cpp.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/moc_predefs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SDF_RayMarching_ProceduralGeneration_autogen/mocs_compilation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    <list default="true" id="5ae94646-dec8-41bf-8d49-bec89eb68cf4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/QtSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QtSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.all.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.all.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsl/sdf.defines.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.defines.glsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,31 +39,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;egoisth777&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/egoisth777/REPO_Deferred_Rendering_Techniques.git&quot;,
-    &quot;accountId&quot;: &quot;0cba1ed3-09cf-4e8b-a5a9-61015e1b64bb&quot;
-  }
-}</component>
-  <component name="MacroExpansionManager">
-    <option name="directoryName" value="cscggzz7" />
-  </component>
-  <component name="ProjectApplicationVersion">
-    <option name="ide" value="CLion" />
-    <option name="majorVersion" value="2024" />
-    <option name="minorVersion" value="1.1" />
-    <option name="productBranch" value="Classic" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2fiTnSvgJbVmefgqN1XmGx5NPTV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -150,78 +46,41 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "CMake Application.SDF_RayMarching_ProceduralGeneration.executor": "Run",
-    "CMake Application.SDF_RayMarhcing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/cmake-build-debug",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\cmake-build-debug" />
-    </key>
-  </component>
-  <component name="RunManager" selected="CMake Application.SDF_RayMarhcing">
-    <configuration name="Unnamed" type="CLionExternalRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SDF_RayMarhcing" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="true" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SDF_RayMarching_ProceduralGeneration" TARGET_NAME="SDF_RayMarching_ProceduralGeneration" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SDF_RayMarching_ProceduralGeneration" RUN_TARGET_NAME="SDF_RayMarching_ProceduralGeneration">
+    <configuration name="SDF_RayMarching_ProceduralGeneration" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SDF_RayMarching_ProceduralGeneration" TARGET_NAME="SDF_RayMarching_ProceduralGeneration" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SDF_RayMarching_ProceduralGeneration" RUN_TARGET_NAME="SDF_RayMarching_ProceduralGeneration">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="CMake Application.SDF_RayMarhcing" />
-      <item itemvalue="Custom Build Application.Unnamed" />
-    </list>
-  </component>
-  <component name="RustProjectSettings">
-    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81856938-25cc-4da5-933d-e9456ff5c83f" name="Changes" comment="" />
-      <created>1714283064843</created>
+      <changelist id="5ae94646-dec8-41bf-8d49-bec89eb68cf4" name="Changes" comment="" />
+      <created>1714494655711</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714283064843</updated>
-      <workItem from="1714283065857" duration="62000" />
-      <workItem from="1714283152380" duration="22000" />
-      <workItem from="1714283358081" duration="580000" />
-      <workItem from="1714283968443" duration="44000" />
-      <workItem from="1714284022840" duration="234000" />
-      <workItem from="1714326876033" duration="37000" />
-      <workItem from="1714338648309" duration="1287000" />
-      <workItem from="1714340006948" duration="9000" />
-      <workItem from="1714340022075" duration="2355000" />
-      <workItem from="1714342630483" duration="7000" />
-      <workItem from="1714343459580" duration="25000" />
-      <workItem from="1714343648946" duration="2000" />
-      <workItem from="1714343875878" duration="7268000" />
-      <workItem from="1714358195749" duration="151000" />
-      <workItem from="1714358363692" duration="2152000" />
-      <workItem from="1714360714565" duration="9649000" />
-      <workItem from="1714373281555" duration="386000" />
-      <workItem from="1714492487614" duration="1205000" />
-      <workItem from="1714493726019" duration="45000" />
-      <workItem from="1714493779002" duration="19000" />
-      <workItem from="1714493804897" duration="165000" />
-      <workItem from="1714493978597" duration="138000" />
+      <updated>1714494655711</updated>
+      <workItem from="1714494657513" duration="3692000" />
     </task>
     <servers />
   </component>
@@ -232,16 +91,5 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="filepath.d.d" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

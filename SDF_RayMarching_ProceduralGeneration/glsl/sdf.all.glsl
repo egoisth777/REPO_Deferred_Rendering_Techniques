@@ -234,20 +234,56 @@ float SDF_exact_cone( vec3 p, vec2 c, float h ) {
     return sqrt(d)*sign(s);
 }
 
+
+float SDF_Freeform_horns(vec3 query){
+    // Define the left and right horns
+    // right horns
+    float result1 = SDF_exact_cone(rotateZ(rotateX(query - vec3(1.5, 1.5, 0.0), 15), 45), vec2(0.5, 0.7), 1.0);
+    float result2 = SDF_exact_cone(rotateZ(rotateX(query - vec3(-1.5, 1.5, 0.0), 15), -45), vec2(0.5, 0.7), 1.0);
+    float horn_sdf = smooth_min(result1, result2, 0.1);
+    return horn_sdf;
+}
+
 /**
 * SDF of the head of the freeform object
 *tstatus
-/
+*/
 float SDF_Freeform_head(vec3 query){
-    // Define the left and right horns
-    // right horns
-    float result = SDF_exact_cone(rotateZ(rotateX(query - vec3(2.0, 0.0, 0.0), 15), 30), vec2(0.5, 0.7), 1.0);
 
-    return result;
+    float face_sdf = SDF_Sphere(query / vec3(1,1.2,1), vec3(0,0,0), 1.) * 1.1;
+    // cheek L
+    face_sdf= smooth_min(face_sdf, SDF_Sphere(query, vec3(0.5, -0.4, 0.5), 0.5), 0.3);
+    // cheek R
+    face_sdf = smooth_min(face_sdf, SDF_Sphere(query, vec3(-0.5, -0.4, 0.5), 0.5), 0.3);
+    // chin
+    face_sdf = smooth_min(face_sdf, SDF_Sphere(query, vec3(0.0, -0.85, 0.5), 0.35), 0.3);
+    // nose
+    face_sdf = smooth_min(face_sdf, SDF_Sphere(query / vec3(1.15,1, 1.7), vec3(0, -0.2, 0.43), 0.6), 0.05);
+    face_sdf = smooth_min(face_sdf, SDF_Sphere(query, vec3(0.0, -1.0, 0.0), 1.0), 0.1);
+
+    return face_sdf;
 }
 
+
+float SDF_freeform_cross(vec3 query) {
+    // Create the sphere base
+
+    float sphere_base = SDF_Sphere(query, vec3(0.0, 1.0, 0.0), 1.0);
+    float box1 = SDF_Box(query - vec3(0.0, 2.5, 0.0), vec3(0.2, 1.5, 0.2));
+    float box2 = SDF_Box(query - vec3(0.0, 2.5, 0.0), vec3(1.0, 0.2, 0.2));
+    box1 = smooth_min(box1, box2, 0.1);
+    box1 = smooth_min(box1, sphere_base, 0.1);
+    return box1;
+}
+
+
 float SDF_Freeform1(vec3 query) {
-    return SDF_Freeform_head(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+    float result = smooth_min(head, horns, 0.1);
+    result = smooth_min(result, cross, 0.1);
+    return result;
 }
 
 /**

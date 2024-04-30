@@ -2,7 +2,9 @@
 # Required Cmake version
 cmake_minimum_required(VERSION 3.27)
 add_compile_options(-Wall)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
+# Enabled static link to to stdlib ()
+# This will enable Nsight Graphics to open the project succesfully
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static") # This will solve some of the problem that cause the DLL to link cxx1112 issue
 
 # automatically set the build platform
 set(_target_platform "x64" CACHE STRING "Target Platform: x86 or x64")
