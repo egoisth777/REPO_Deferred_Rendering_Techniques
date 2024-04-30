@@ -238,8 +238,8 @@ float SDF_exact_cone( vec3 p, vec2 c, float h ) {
 float SDF_Freeform_horns(vec3 query){
     // Define the left and right horns
     // right horns
-    float result1 = SDF_exact_cone(rotateZ(rotateX(query - vec3(1.5, 1.5, 0.0), 15), 45), vec2(0.5, 0.7), 1.0);
-    float result2 = SDF_exact_cone(rotateZ(rotateX(query - vec3(-1.5, 1.5, 0.0), 15), -45), vec2(0.5, 0.7), 1.0);
+    float result1 = SDF_exact_cone(rotateZ(rotateX(query - vec3(1.2, 1.0, -0.3), 15), 45), vec2(0.5, 0.7), 1.0);
+    float result2 = SDF_exact_cone(rotateZ(rotateX(query - vec3(-1.2, 1.0, -0.3), 15), -45), vec2(0.5, 0.7), 1.0);
     float horn_sdf = smooth_min(result1, result2, 0.1);
     return horn_sdf;
 }
@@ -286,8 +286,9 @@ float SDF_Freeform1(vec3 query) {
     return result;
 }
 
+
 /**
-* Return the BSDF of Wahoo
+* Return the BSDF of Wahoo{
 */
 BSDF BSDF_Wahoo(vec3 query) {
     // Head base
@@ -310,12 +311,40 @@ BSDF BSDF_Wahoo(vec3 query) {
     return result;
 }
 
+/**
+* Return the BSDF of the head
+*/
+BSDF BSDF_freeform1(vec3 query){
+
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1.);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
 
 /**
 * Scene SDF
 */
 float sceneSDF(vec3 query){
     if(USE_SPHERE){
+
         return SDF_Sphere(query, vec3(0.), 1.f);
     }
     if(USE_WAHOO){
@@ -337,7 +366,8 @@ BSDF sceneBSDF(vec3 query) {
          return BSDF_Wahoo(query);
     }
     if(USE_FREEFORM1){
-        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
+        return BSDF_freeform1(query);
+//        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
     }
     return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
 }

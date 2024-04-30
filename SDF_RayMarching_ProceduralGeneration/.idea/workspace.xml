@@ -21,9 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae94646-dec8-41bf-8d49-bec89eb68cf4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/QtSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QtSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.all.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.all.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.defines.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.defines.glsl" afterDir="false" />
     </list>
@@ -80,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714494655711</updated>
-      <workItem from="1714494657513" duration="3692000" />
+      <workItem from="1714494657513" duration="6634000" />
     </task>
     <servers />
   </component>
