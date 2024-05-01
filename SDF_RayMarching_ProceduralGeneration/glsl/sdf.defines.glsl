@@ -4,7 +4,7 @@
 #define WAHOO     (1 << 1)
 #define FREEFORM1 (1 << 2)
 
-#define OBJECT_TYPE SPHERE
+#define OBJECT_TYPE FREEFORM1
 
 #define USE_SPHERE    ((OBJECT_TYPE & SPHERE) != 0)
 #define USE_WAHOO     ((OBJECT_TYPE & WAHOO) != 0)
@@ -320,10 +320,8 @@ BSDF BSDF_Wahoo(vec3 query) {
 * Return the BSDF of the head
 */
 BSDF BSDF_freeform1(vec3 query){
-
     // Head Base
-    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
-    0., 0.7, 1., 2.0);
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)), 0., 0.7, 1., 2.0);
     result.nor = SDF_Normal(query);
     float head = SDF_Freeform_head(query);
     float horns = SDF_Freeform_horns(query);
@@ -445,39 +443,38 @@ BSDF BSDF_freeform_rep4(vec3 query){
 * Scene SDF
 */
 float sceneSDF(vec3 query){
-    const int REPEAT = 10;
-    for(int i = 0; i < REPEAT; ++i){
-        for(int j = 0; j < REPEAT; ++j){
-            for(int k = 0; j < REPEAT; ++k){
-               repeat(query, vec3(i, j, k));
-                if(USE_SPHERE){
-                    return SDF_Sphere(query, vec3(0.), 1.f);
-                }
-                if(USE_WAHOO){
-                    return SDF_Wahoo(query);
-                }
-                if(USE_FREEFORM1){
-                    return SDF_Freeform1(query);
-                }
-                return 0.f;
-            }
-        }
+
+    vec3 p= repeat(query, vec3(10.0));
+
+    if(USE_SPHERE){
+        return SDF_Sphere(p, vec3(0.), 1.f);
     }
+
+    if(USE_WAHOO){
+        return SDF_Wahoo(p);
+    }
+
+    if(USE_FREEFORM1){
+        return SDF_Freeform1(p);
+    }
+
+    return 0.f;
 }
 
-
 BSDF sceneBSDF(vec3 query) {
+
+    vec3 p = repeat(query, vec3(10.0));
     if(USE_SPHERE){ // Use a simple default materials
-        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
+        return BSDF(query, SDF_Normal(p), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
     }
     if(USE_WAHOO){
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
-         return BSDF_Wahoo(query);
+         return BSDF_Wahoo(p);
     }
     if(USE_FREEFORM1){
-        return BSDF_freeform1(query);
+        return BSDF_freeform1(p);
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
     }
-    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
+    return BSDF(query, SDF_Normal(p), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
 }
 
