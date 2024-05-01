@@ -57,6 +57,7 @@ struct BSDF {
     float metallic;
     float roughness;
     float ao;
+    float thickness;
 };
 
 struct MarchResult {
@@ -129,6 +130,7 @@ SmoothMinResult smooth_min_lerp( float a, float b, float k ) {
     }
     return SmoothMinResult(b-s,1.0-m);
 }
+
 vec3 repeat(vec3 query, vec3 cell) {
     return mod(query + 0.5 * cell, cell) - 0.5 * cell;
 }
@@ -296,7 +298,7 @@ float SDF_Freeform1(vec3 query) {
 BSDF BSDF_Wahoo(vec3 query) {
     // Head base
     BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
-                       0., 0.7, 1.);
+                       0., 0.7, 1., 2.0);
 
     result.nor = SDF_Normal(query);
 
@@ -321,7 +323,7 @@ BSDF BSDF_freeform1(vec3 query){
 
     // Head Base
     BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
-    0., 0.7, 1.);
+    0., 0.7, 1., 2.0);
     result.nor = SDF_Normal(query);
     float head = SDF_Freeform_head(query);
     float horns = SDF_Freeform_horns(query);
@@ -342,27 +344,131 @@ BSDF BSDF_freeform1(vec3 query){
     return result;
 }
 
+BSDF BSDF_freeform_rep1(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+BSDF BSDF_freeform_rep2(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+BSDF BSDF_freeform_rep3(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+BSDF BSDF_freeform_rep4(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+
 /**
 * Scene SDF
 */
 float sceneSDF(vec3 query){
-    if(USE_SPHERE){
-
-        return SDF_Sphere(query, vec3(0.), 1.f);
+    const int REPEAT = 10;
+    for(int i = 0; i < REPEAT; ++i){
+        for(int j = 0; j < REPEAT; ++j){
+            for(int k = 0; j < REPEAT; ++k){
+               repeat(query, vec3(i, j, k));
+                if(USE_SPHERE){
+                    return SDF_Sphere(query, vec3(0.), 1.f);
+                }
+                if(USE_WAHOO){
+                    return SDF_Wahoo(query);
+                }
+                if(USE_FREEFORM1){
+                    return SDF_Freeform1(query);
+                }
+                return 0.f;
+            }
+        }
     }
-    if(USE_WAHOO){
-        return SDF_Wahoo(query);
-    }
-    if(USE_FREEFORM1){
-        return SDF_Freeform1(query);
-    }
-    return 0.f;
 }
 
 
 BSDF sceneBSDF(vec3 query) {
     if(USE_SPHERE){ // Use a simple default materials
-        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
+        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
     }
     if(USE_WAHOO){
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
@@ -372,6 +478,6 @@ BSDF sceneBSDF(vec3 query) {
         return BSDF_freeform1(query);
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
     }
-    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
+    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
 }
 

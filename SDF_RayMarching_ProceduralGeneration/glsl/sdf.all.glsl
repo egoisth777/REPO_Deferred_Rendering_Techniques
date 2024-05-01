@@ -57,6 +57,7 @@ struct BSDF {
     float metallic;
     float roughness;
     float ao;
+    float thickness;
 };
 
 struct MarchResult {
@@ -129,6 +130,7 @@ SmoothMinResult smooth_min_lerp( float a, float b, float k ) {
     }
     return SmoothMinResult(b-s,1.0-m);
 }
+
 vec3 repeat(vec3 query, vec3 cell) {
     return mod(query + 0.5 * cell, cell) - 0.5 * cell;
 }
@@ -296,7 +298,7 @@ float SDF_Freeform1(vec3 query) {
 BSDF BSDF_Wahoo(vec3 query) {
     // Head base
     BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
-                       0., 0.7, 1.);
+                       0., 0.7, 1., 2.0);
 
     result.nor = SDF_Normal(query);
 
@@ -321,7 +323,7 @@ BSDF BSDF_freeform1(vec3 query){
 
     // Head Base
     BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
-    0., 0.7, 1.);
+    0., 0.7, 1., 2.0);
     result.nor = SDF_Normal(query);
     float head = SDF_Freeform_head(query);
     float horns = SDF_Freeform_horns(query);
@@ -342,27 +344,131 @@ BSDF BSDF_freeform1(vec3 query){
     return result;
 }
 
+BSDF BSDF_freeform_rep1(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+BSDF BSDF_freeform_rep2(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+BSDF BSDF_freeform_rep3(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+BSDF BSDF_freeform_rep4(vec3 query){
+    // Head Base
+    BSDF result = BSDF(query, normalize(query), pow(vec3(239, 181, 148) / 255., vec3(2.2)),
+    0., 0.7, 1., 2.0);
+    result.nor = SDF_Normal(query);
+    float head = SDF_Freeform_head(query);
+    float horns = SDF_Freeform_horns(query);
+    float cross = SDF_freeform_cross(query);
+
+    if(horns < head && horns < cross) {
+        result.albedo = pow(vec3(30,60,16) / 255., vec3(2.2));
+        result.metallic = 0.1;
+        result.roughness = 0.7;
+    }
+
+    if(cross < head && cross < horns) {
+        result.albedo = pow(vec3(186,45,41) / 255., vec3(2.2));
+        result.metallic = 1.0;
+        result.roughness = 0.3;
+    }
+
+    return result;
+}
+
+
 /**
 * Scene SDF
 */
 float sceneSDF(vec3 query){
-    if(USE_SPHERE){
-
-        return SDF_Sphere(query, vec3(0.), 1.f);
+    const int REPEAT = 10;
+    for(int i = 0; i < REPEAT; ++i){
+        for(int j = 0; j < REPEAT; ++j){
+            for(int k = 0; j < REPEAT; ++k){
+               repeat(query, vec3(i, j, k));
+                if(USE_SPHERE){
+                    return SDF_Sphere(query, vec3(0.), 1.f);
+                }
+                if(USE_WAHOO){
+                    return SDF_Wahoo(query);
+                }
+                if(USE_FREEFORM1){
+                    return SDF_Freeform1(query);
+                }
+                return 0.f;
+            }
+        }
     }
-    if(USE_WAHOO){
-        return SDF_Wahoo(query);
-    }
-    if(USE_FREEFORM1){
-        return SDF_Freeform1(query);
-    }
-    return 0.f;
 }
 
 
 BSDF sceneBSDF(vec3 query) {
     if(USE_SPHERE){ // Use a simple default materials
-        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
+        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
     }
     if(USE_WAHOO){
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0, 0), 0.5, 0.5, 1.);
@@ -372,7 +478,7 @@ BSDF sceneBSDF(vec3 query) {
         return BSDF_freeform1(query);
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
     }
-    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
+    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
 }
 
 #define GAMMA 2.2
@@ -485,6 +591,14 @@ vec3 metallic_plastic_LTE(BSDF bsdf, vec3 wo) {
 
 #define FOVY 45 * PI / 180.f
 #define EPSILON 0.001
+#define DISTORTION 0.2
+#define GLOW 6.0
+#define SCALE 3.0
+#define AMBIENT 0.1
+
+const float ao_thickness_k = 2.0;
+const float ao_thickness_search_dist = 0.085;
+
 
 Ray rayCast() {
     vec2 ndc = fs_UV;
@@ -516,7 +630,7 @@ MarchResult raymarch(Ray ray){
     vec3 curr_pos = ray.origin;// initialize the origin of the ray to be the current position
 
     // Declare a march result and initialize it to 0
-    MarchResult result = MarchResult(0., 0, BSDF(vec3(0.), vec3(0.), vec3(0.), 0.f, 0.f, 0.f));
+    MarchResult result = MarchResult(0., 0, BSDF(vec3(0.), vec3(0.), vec3(0.), 0.f, 0.f, 0.f, 0.f));
     for (int i = 0; i < MAX_ITERATIONS; i++) { // define the loop to iterate over MAX_ITERATIONS
 
         // Query the scene SDF to gain the minimum distance to the surfaces defined by SDFs
@@ -538,6 +652,40 @@ MarchResult raymarch(Ray ray){
     return result;
 }
 
+float compute_wall_thickness(Ray ray){
+    float max_dist = 1.0;
+    vec3 curr_pos = ray.origin;// initialize the origin of the ray to be the current position
+
+    // Declare a march result and initialize it to 0
+    float accum_dist = 0.;// initialize the accumulated distance to be 0
+    float march_step = 0.005;// initialize the march step to be 0.001
+    float wall_thickness = 0.0;
+
+    for (int i = 0; i < 5; ++i) {
+        accum_dist += march_step; // update the accumulated distance
+        if(accum_dist > ao_thickness_search_dist){
+            break;
+        }
+        curr_pos = ray.origin + accum_dist * ray.direction;
+        wall_thickness = 1.0 / pow(2.0, float(i)) * (float(i) * march_step - sceneSDF(curr_pos));
+    }
+
+    return 1.0 - wall_thickness;
+}
+
+
+/**
+* Compute the subsurface scattering color function
+*/
+vec3 subsurfaceColor(vec3 lightDir, vec3 normal, vec3 viewVec, float thin, vec3 albedo, vec3 light_col) {
+    vec3 scatterDir = lightDir + normal * DISTORTION; // Last term is tunable
+    float lightReachingEye = pow(clamp(dot(viewVec, -scatterDir), 0.0, 1.0), GLOW) * SCALE;
+    float attenuation = max(0.0, dot(normal, lightDir) + dot(viewVec, -lightDir));
+    float totalLight = attenuation * (lightReachingEye + AMBIENT) * thin;
+    return albedo * light_col * totalLight;
+}
+
+
 void main()
 {
     Ray ray = rayCast();
@@ -550,8 +698,18 @@ void main()
         bsdf.roughness = u_Roughness;
         bsdf.ao = u_AmbientOcclusion;
     }
-    vec3 pos = ray.origin + result.t * ray.direction;
-    vec3 color = metallic_plastic_LTE(bsdf, -ray.direction);
+
+    // Compute Subsurface Scattering color
+    Ray nor = Ray(bsdf.pos, -bsdf.nor);
+    float ao_thickness = compute_wall_thickness(nor);
+    vec3 light_vec = normalize(-u_CamPos + bsdf.pos);
+    vec3 view_vec  = normalize(u_CamPos - bsdf.pos);
+    vec3 light_col = texture(u_DiffuseIrradianceMap, -bsdf.nor).rgb;
+
+    //TODO
+    vec3 subsurface_color = (1 - bsdf.metallic) * subsurfaceColor(light_vec, result.bsdf.nor, view_vec, ao_thickness, bsdf.albedo, light_col);
+
+    vec3 color = metallic_plastic_LTE(bsdf, -ray.direction) + subsurface_color;
     // Reinhard operator to reduce HDR values from magnitude of 100s back to [0, 1]
     color = color / (color + vec3(1.0));
     // Gamma correction
