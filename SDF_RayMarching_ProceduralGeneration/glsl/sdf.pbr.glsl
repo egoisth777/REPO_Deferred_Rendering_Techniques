@@ -53,9 +53,9 @@ return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.
 
 void coordinateSystem(in vec3 nor, out vec3 tan, out vec3 bit) {
     if (abs(nor.x) > abs(nor.y))
-    tan = vec3(-nor.z, 0, nor.x) / sqrt(nor.x * nor.x + nor.z * nor.z);
+        tan = vec3(-nor.z, 0, nor.x) / sqrt(nor.x * nor.x + nor.z * nor.z);
     else
-    tan = vec3(0, nor.z, -nor.y) / sqrt(nor.y * nor.y + nor.z * nor.z);
+        tan = vec3(0, nor.z, -nor.y) / sqrt(nor.y * nor.y + nor.z * nor.z);
     bit = cross(nor, tan);
 }
 

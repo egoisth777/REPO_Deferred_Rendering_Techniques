@@ -98,6 +98,7 @@ vec3 subsurfaceColor(vec3 lightDir, vec3 normal, vec3 viewVec, float thin, vec3 
 
 void main()
 {
+    initializeCells(); // initialize the cell grid
     Ray ray = rayCast();
     MarchResult result = raymarch(ray);
     BSDF bsdf = result.bsdf;
@@ -115,6 +116,7 @@ void main()
     vec3 light_vec = normalize(-u_CamPos + bsdf.pos);
     vec3 view_vec  = normalize(u_CamPos - bsdf.pos);
     vec3 light_col = texture(u_DiffuseIrradianceMap, -bsdf.nor).rgb;
+
 
     //TODO
     vec3 subsurface_color = (1 - bsdf.metallic) * subsurfaceColor(light_vec, result.bsdf.nor, view_vec, ao_thickness, bsdf.albedo, light_col);

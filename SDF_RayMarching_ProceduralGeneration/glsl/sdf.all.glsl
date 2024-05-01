@@ -71,6 +71,25 @@ struct SmoothMinResult {
     float material_t;
 };
 
+// Cell related staff todo
+const float CELLSIZE = 10.0;
+const int NUM_CELLS = 10;
+struct Cell{
+    vec3 position;
+    float scale;
+    int bsdf_type;
+};
+Cell cells[NUM_CELLS];
+
+void initializeCells() {
+    cells[0] = Cell(vec3(0.0, 0.0, 0.0), 1.0, 0);
+    cells[1] = Cell(vec3(5.0, 0.0, 0.0), 0.8, 1);
+    cells[2] = Cell(vec3(0.0, 5.0, 0.0), 1.2, 2);
+    cells[3] = Cell(vec3(0.0, 0.0, 5.0), 0.6, 3);
+    cells[4] = Cell(vec3(5.0, 5.0, 0.0), 1.5, 4);
+}
+// Cell related staff todo
+
 float dot2( in vec2 v ) { return dot(v,v); }
 float dot2( in vec3 v ) { return dot(v,v); }
 float ndot( in vec2 a, in vec2 b ) { return a.x*b.x - a.y*b.y; }
@@ -443,26 +462,34 @@ BSDF BSDF_freeform_rep4(vec3 query){
 * Scene SDF
 */
 float sceneSDF(vec3 query){
+    // determine which cell that we are currently in
+    vec3 cell = vec3(CELLSIZE);
+    vec3 cellLocalPosition = mod(query + vec3(CELLSIZE) * 0.5, cell);
+    // ceonvert to lower left corner position
+    ivec3 cell_pos_lowerleftcorner = ivec3(floor(cellLocalPosition.x), floor(cellLocalPosition.y), floor(cellLocalPosition.z));
 
-    vec3 p= repeat(query, vec3(10.0));
+    int cellIndex = cell_pos_lowerleftcorner.x + cell_pos_lowerleftcorner.y * int(CELLSIZE) + cell_pos_lowerleftcorner.z * int(CELLSIZE) * int(CELLSIZE);
+    cellIndex = cellIndex % NUM_CELLS; // remap to [0,5) Group
+
+    vec3 localQuery = repeat(query, cell);
 
     if(USE_SPHERE){
-        return SDF_Sphere(p, vec3(0.), 1.f);
+        return SDF_Sphere(localQuery, vec3(0.), 1.f);
     }
 
     if(USE_WAHOO){
-        return SDF_Wahoo(p);
+        return SDF_Wahoo(localQuery);
     }
 
     if(USE_FREEFORM1){
-        return SDF_Freeform1(p);
+        return SDF_Freeform1(localQuery / cells[cellIndex].scale);
     }
 
     return 0.f;
 }
 
 BSDF sceneBSDF(vec3 query) {
-
+#if 0
     vec3 p = repeat(query, vec3(10.0));
     if(USE_SPHERE){ // Use a simple default materials
         return BSDF(query, SDF_Normal(p), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
@@ -475,7 +502,8 @@ BSDF sceneBSDF(vec3 query) {
         return BSDF_freeform1(p);
 //        return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1.);
     }
-    return BSDF(query, SDF_Normal(p), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
+#endif
+    return BSDF(query, SDF_Normal(query), vec3(0.5, 0.5, 0.5), 0.5, 0.5, 1., 2.0);
 }
 
 #define GAMMA 2.2
@@ -533,9 +561,9 @@ return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.
 
 void coordinateSystem(in vec3 nor, out vec3 tan, out vec3 bit) {
     if (abs(nor.x) > abs(nor.y))
-    tan = vec3(-nor.z, 0, nor.x) / sqrt(nor.x * nor.x + nor.z * nor.z);
+        tan = vec3(-nor.z, 0, nor.x) / sqrt(nor.x * nor.x + nor.z * nor.z);
     else
-    tan = vec3(0, nor.z, -nor.y) / sqrt(nor.y * nor.y + nor.z * nor.z);
+        tan = vec3(0, nor.z, -nor.y) / sqrt(nor.y * nor.y + nor.z * nor.z);
     bit = cross(nor, tan);
 }
 
@@ -685,6 +713,7 @@ vec3 subsurfaceColor(vec3 lightDir, vec3 normal, vec3 viewVec, float thin, vec3 
 
 void main()
 {
+    initializeCells(); // initialize the cell grid
     Ray ray = rayCast();
     MarchResult result = raymarch(ray);
     BSDF bsdf = result.bsdf;
@@ -702,6 +731,7 @@ void main()
     vec3 light_vec = normalize(-u_CamPos + bsdf.pos);
     vec3 view_vec  = normalize(u_CamPos - bsdf.pos);
     vec3 light_col = texture(u_DiffuseIrradianceMap, -bsdf.nor).rgb;
+
 
     //TODO
     vec3 subsurface_color = (1 - bsdf.metallic) * subsurfaceColor(light_vec, result.bsdf.nor, view_vec, ao_thickness, bsdf.albedo, light_col);
