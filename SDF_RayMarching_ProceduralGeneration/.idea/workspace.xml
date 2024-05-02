@@ -25,7 +25,6 @@
       <change beforePath="$PROJECT_DIR$/glsl/sdf.all.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.all.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.defines.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.defines.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsl/sdf.frag.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.frag.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsl/sdf.pbr.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/glsl/sdf.pbr.glsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +38,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="c3n8xdy4" />
+  </component>
   <component name="NamedScopeManager">
     <scope name="glsl" pattern="file:*.glsl||file[SDF_RayMarching_ProceduralGeneration]:*" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2frzlVo3PSocVPLnm4RJAcFheFE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,29 +55,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "CMake Application.SDF_RayMarching_ProceduralGeneration.executor": "Run",
+    "CMake Application.SDF_RayMarching_ProceduralGeneration.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/projects/4610projects/REPO_Deferred_Rendering_Techniques/SDF_RayMarching_ProceduralGeneration/glsl",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\4610projects\REPO_Deferred_Rendering_Techniques\SDF_RayMarching_ProceduralGeneration\glsl" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="SDF_RayMarching_ProceduralGeneration" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SDF_RayMarching_ProceduralGeneration" TARGET_NAME="SDF_RayMarching_ProceduralGeneration" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SDF_RayMarching_ProceduralGeneration" RUN_TARGET_NAME="SDF_RayMarching_ProceduralGeneration">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -90,7 +96,11 @@
       <option name="presentableId" value="Default" />
       <updated>1714494655711</updated>
       <workItem from="1714494657513" duration="11398000" />
-      <workItem from="1714574139193" duration="5348000" />
+      <workItem from="1714574139193" duration="6024000" />
+      <workItem from="1714612246722" duration="150000" />
+      <workItem from="1714612402903" duration="8230000" />
+      <workItem from="1714628127456" duration="64000" />
+      <workItem from="1714628201222" duration="2344000" />
     </task>
     <servers />
   </component>

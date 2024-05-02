@@ -1,11 +1,10 @@
-
 #define FOVY 45 * PI / 180.f
 #define EPSILON 0.001
 #define DISTORTION 0.2
 #define GLOW 6.0
 #define SCALE 3.0
 #define AMBIENT 0.1
-
+#define SUBSURFACE_COL 0
 const float ao_thickness_k = 2.0;
 const float ao_thickness_search_dist = 0.085;
 
@@ -37,23 +36,47 @@ MarchResult raymarch(Ray ray){
     float min_dist = EPSILON;// Epsilon value to stop ray marching
     float max_dist = 100.;
     int hit_something = 0;
-    vec3 curr_pos = ray.origin;// initialize the origin of the ray to be the current position
+    vec3 curr_pos = ray.origin; // initialize the origin of the ray to be the current position
 
     // Declare a march result and initialize it to 0
     MarchResult result = MarchResult(0., 0, BSDF(vec3(0.), vec3(0.), vec3(0.), 0.f, 0.f, 0.f, 0.f));
     for (int i = 0; i < MAX_ITERATIONS; i++) { // define the loop to iterate over MAX_ITERATIONS
 
-        // Query the scene SDF to gain the minimum distance to the surfaces defined by SDFs
-        march_step = sceneSDF(curr_pos);
+        // Compute the cell index ofthe current position
+        vec3 cell = floor(curr_pos / vec3(grid_size) + vec3(0.5f));
+        ivec3 odd = (ivec3(cell) % ivec3(2) + ivec3(2)) % ivec3(2);
+        int id = odd.x ^ odd.y ^ odd.z;
+        // Compute the blending factor of the current scale amount
+        float scale = 0.5f * random31(cell * -26849.f) + 0.5f;
+        vec2 scale_bound = vec2(0.5f, 3.0f);
+        // Compute the scale of the current cell
+        float scale_x = mix(scale_bound.x, scale_bound.y, scale);
+        float scale_y = mix(scale_bound.x, scale_bound.y, scale);
+        float scale_z = mix(scale_bound.x, scale_bound.y, scale);
+        vec3 scale_dim3 = vec3(scale_x, scale_y, scale_z);
+        
+        float max_offset = 5.f;
+        vec3 offset =max_offset * vec3(random31(cell * -175.234f), random31(cell * 13.45f + 1.f), random31(cell * 25.31f + 2.f));
+        vec3 point = repeat(curr_pos, vec3(grid_size));
+        point = repeat(point, vec3(grid_size));
+        point += offset;
+        
+        point /= scale_dim3;
+        point = rotateX(point, 15);
+
+        // Query the scene SDF to gain the minimum distance to the surfaces defined by SDF
+        march_step = sceneSDF(point);
+
 
         if (march_step > max_dist) { // too far away from the surface, simply cut it
-            break;
+             break;
         }
         if (abs(march_step) < min_dist) { // already clase enough to the surface
             hit_something = 1;
-            BSDF bsdf = sceneBSDF(curr_pos);
+            BSDF bsdf = sceneBSDF(point, id);
             return MarchResult(accum_dist, i, bsdf);
         }
+
         accum_dist += march_step;// update the accumulated distance
         // update the curr_pos according to the march_step given by the sdf
         // by marching the minimum distance along the ray direction
@@ -117,16 +140,15 @@ void main()
     vec3 view_vec  = normalize(u_CamPos - bsdf.pos);
     vec3 light_col = texture(u_DiffuseIrradianceMap, -bsdf.nor).rgb;
 
-
-    //TODO
+#if SUBSURFACE_COL
     vec3 subsurface_color = (1 - bsdf.metallic) * subsurfaceColor(light_vec, result.bsdf.nor, view_vec, ao_thickness, bsdf.albedo, light_col);
-
     vec3 color = metallic_plastic_LTE(bsdf, -ray.direction) + subsurface_color;
+#endif
+    vec3 color = metallic_plastic_LTE(bsdf, -ray.direction);
     // Reinhard operator to reduce HDR values from magnitude of 100s back to [0, 1]
     color = color / (color + vec3(1.0));
     // Gamma correction
     color = pow(color, vec3(1.0/2.2));
-
 #if 0// print normal for debugging
     out_Col = vec4(vec3(result.bsdf.nor * 0.5 + 0.5), result.hitSomething > 0 ? 1. : 0.);
 #endif
